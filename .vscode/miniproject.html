@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<g>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0%;
+        padding: 4%;
+        box-sizing: border-box;
+    }
+    html,body{
+        heigth:100%;
+        width:100%;
+    }
+    #main{
+        height: 100%;
+    
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin:100px;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+    .shape{
+        margin-left: 10px ;margin top: 10px;
+        height: 200px;
+        width:200px;
+    
+        border:1px solid black;
+        
+        justify-items: center;
+        /* align-items: center; */
+        display: flex;
+        justify-content:center;
+        
+        
+    }
+    .shape:hover{
+        background-color: blue;
+    }
+    #circle{
+        border-radius: 50%;
+        background-color: aquamarine;
+        border: 1px solid black;
+        
+    }
+    #circle::backdrop{
+        background-color: brown;
+        
+    }
+    #circle:hover{
+        background-color:yellow;
+    }
+
+    #diamond{
+
+        background-color:red;
+        rotate: 45deg;
+        height: 150px;
+        width: 150px;
+    }
+    #diamond:hover{
+        background-color: rgb(62, 214, 62);
+        width: 150px;
+    }
+</style>
+<body>
+   <div id ="main">
+  
+    <div id="box">
+        <div class="shape">box1</div>
+        
+        <div id="diamond" class="shape">box2</div>
+    </div>
+    
+   <div id ="circle"  class="shape">box3</div>
+   
+   </div>
+   
+
+</body>
+</html>

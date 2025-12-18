@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab-content {
+  display: none; /* initially hide all */
+}
+
+.tab-content.active {
+  display: block; /* show active content */
+}
+
+.tab-btn.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="tabs">
+  <button class="tab-btn">Tab 1</button>
+  <button class="tab-btn">Tab 2</button>
+  <button class="tab-btn">Tab 3</button>
+</div>
+
+<div class="tab-content">Content 1</div>
+<div class="tab-content">Content 2</div>
+<div class="tab-content">Content 3</div>
+
+</body>
+<script>// Select all buttons and content
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
+
+// Loop through each tab button
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    
+    // Remove 'active' class from all tabs
+    tabs.forEach(t => t.classList.remove("active"));
+    
+    // Add 'active' class to clicked tab
+    tab.classList.add("active");
+    
+    // Hide all contents
+    contents.forEach(c => c.classList.remove("active"));
+    
+    // Show content corresponding to clicked tab
+    contents[index].classList.add("active");
+  });
+});
+</script>
+</html>

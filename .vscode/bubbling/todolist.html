@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .orderlist{
+        background-color:red;
+        margin-top: 50px;
+
+    }
+</style>
+<body>
+    <h1>to-do-list</h1>
+    <div>
+<ol class ="orderlist">
+    <li>manago</li>
+    <li>banana</li>
+    <li>apple</li>
+    <li>guava</li>
+    <li>pineapple</li>
+    <br>
+   
+
+</ol>
+   <button id="btn" ><b>clickme</b></button>
+</div>
+
+
+<script>
+    let list = document.getElementsByClassName("orderlist")[0];
+    let btn1=document.getElementById("btn");
+
+    btn1.addEventListener("click",()=>{
+    let add= document.createElement("li");
+    add.textContent="watermelon";
+   
+    list.appendChild(add);
+       let add1= document.createElement("li");
+    add1.textContent="kiwi";
+   
+    list.appendChild(add1);
+    
+    });
+    
+</script>
+</body>
+</html>

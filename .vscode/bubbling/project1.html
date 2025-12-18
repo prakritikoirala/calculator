@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ol{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: calc();
+    }
+</style>
+<body>
+    <h1>2025 MODEL QUESTION (BICTE(Bachloer of information communication technology))</h1>
+    <ol>
+     <!-- <button>  <li><p>question 1</p></li></button>
+     <p>what is computer?</p>
+        <p>&rarr; computer is a electronic machine that perform works faster and easier.</p>
+        <button>show </button>
+        <li><p>what is the full form of CPU?</p></li>
+        <P>&rarr;  The fullform of CPU is central processing unit.</P>
+        <button>show</button> -->
+        <!-- <div class="questionbank">
+            
+<Li><span class ="question1">what is computer</span></Li>
+    <span class = "question1" > &rAarr;computer is an electronic device that perform mathmatical operation and scientific operation.</span>
+<button>showanswer</button>
+  <!-- <li><span class="question2">what is the fullform of cpu?</span></li>
+  <span class="question2">&rAarr;The fullform of CPU is central processing unit.</span><button>showanswer</button>
+
+            </ol>
+            
+        </div>
+
+    </ol>
+</body>
+<script> -->
+    <!-- // let a = document.querySelector("ol");
+    // let btn1 =document.querySelector("button");
+    // bt.document.addEventlistener("click",()=>{
+    //     btn1. -->
+    <!-- // }) -->
+    <!-- let class1= document.querySelector(".questionbank")[0];
+    let firstquestion = document.getElementsByClassName(".question1");
+    let btn = document.querySelectorAll("button");
+btn.addEventListener("click",()=>{
+    if(firstquestion.style.display==="none"){
+        firstquestion.style.display="block";
+
+    }
+    else{
+        firstquestion.style.dispaly="none"; -->
+    <!-- }
+});
+
+</script>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .questionbank{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:28px
+    }
+</style>
+<body>
+    <h1>Bicte model question 2025</h1>
+    <div class = "questionbank">
+        <p class ="question2">what is computer?</p>
+        <p class = "answer2" style="display:none;">&rarr; Computer is an electronic machine that perform some mathmathical and logical operation.</p>
+        <button>show/hide</button>
+    
+    <div class="questionbank">
+        <p class="question2">what is the fullform of cpu</p>
+        <p class="answer2"style="display:none;">&rarr;the fullform of CPU is central processing unit</p>
+        <button>show/hide</button>
+    </div>
+    </div>
+</body>
+<script>
+    let questionbanks= document.querySelectorAll(".questionbank");
+    // let btn=document.querySelector("button");
+
+    questionbanks.forEach(bank =>{
+    let btn=bank.querySelector("button");
+    let para1=bank.querySelector(".question2");
+    let para= bank.querySelector(".answer2");
+
+    btn.addEventListener("dblclick",()=>{
+        if(para.style.display==="none"|| para.style.display === ""){
+
+          para.style.display="block" ;
+        }
+        else{
+            para.style.display="none"; }
+    });
+    });
+</script>
+</html>

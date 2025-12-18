@@ -1,0 +1,38 @@
+
+*{
+    margin:0px;
+    padding :0px;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+.loginmodel{
+    width:30%;
+    heigth:100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-attachment:#ccc;
+    position: fixed;
+    rigth:0px;
+
+
+}
+.headingmodel{
+
+    display:flex;
+    
+    justify-content: space-between;
+
+}
+.loginmodel form{
+    margin-top: 50px;
+    
+
+}
+.loginmodel form label{
+ display: block;
+
+}
+.loginmodel form input{
+    width :150px;
+    height: 40px;
+
+}

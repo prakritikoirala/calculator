@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Image Collection:</h1> 
+   <img src="">
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .text1{
+        background-color: aqua;
+        height: 300px;
+        width:200px;
+        font-size: medium;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin:10px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <h1>character counter</h1>
+    <div class ="text1">
+        <p>hello, I am prakriti koirala. I am from syangja district. Currently, I study in Bachloer third semster in Waling Multiple Campus.
+            I am intrest in web development. I am eager to learn different technology.nowdoys.I learn javascript and i want to become a fullstack developer.
+        </p>
+    </div>
+
+
+
+</body>
+<script>
+    let textselect=document.queryselector(".text1");
+    textselect.addeventListener("keyup",()=>{
+        if(textselect.length<200){
+            
+        }
+    });
+
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .text{
+height:34px;
+width:34px
+border:30px solid black;
+
+    }
+</style>
+<body>
+    <h1>text:</h1>
+    <div class = "text">
+            <textarea id ="text1" placeholder="enter text"></textarea>
+</div>
+</body> 
+<script>
+    // let box=textarea.value
+    // console.log(box);
+    let box=document.querySelectorAll(".text");
+    box.addEventListener("keyup",()=>{
+        let calculate= box.value.length;
+        let remaining= length-20;
+        
+        let textarea=remaining+"chareacter left";
+        if(calculate<20){
+
+            count.style.color="red";
+            
+        }
+                else{
+count.style.color="black";
+                
+            }
+           
+
+        });
+
+</script> -->
+<!-- </html> -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Textarea Counter</title>
+<style>
+    .text {
+        height: 100px;
+        width: 300px;
+        border: 2px solid black;
+    }
+    #count {
+        margin-top: 5px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <h1>Text:</h1>
+    <div class="text">
+        <textarea id="text1" placeholder="Enter text"></textarea>
+    </div>
+    <div id="count">20 characters left</div>
+
+<script>
+let textarea = document.getElementById("text1");
+let count = document.getElementById("count");
+let maxLength = 20;
+
+textarea.addEventListener("keyup", () => {
+    let calculate = textarea.value.length;
+    let remaining = maxLength - calculate;
+    
+    count.textContent = remaining + " alert!";
+ 
+    if (remaining < 0) {
+        count.style.color = "red";
+    } else {
+        count.style.color = "black"; 
+    }
+});
+</script>
+</body>
+</html>

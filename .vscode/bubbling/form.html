@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            padding:50px,10px;
+        }
+        .formdesign{
+            font-size: 16px;
+            size: 40px;
+            border: 58px;
+            margin:14px;
+        }
+        .formerror{
+            color: red;
+        }
+        #btn{
+            border-radius: 40px;
+            height: 30px;
+            margin:30px;
+            width:60px;
+            font-style:unset;
+        }
+    </style>
+    <p>html form </p>
+    <form action = "/myaction.php" name = "myform" onsubmit = "return validateform()" method="post">
+        <div class = "formdesign"id="Name">
+      Name: <input type = "text" name = "fname"> <span class = "formerror"><b>*this is a error</b></span>
+
+      <br>
+      </div>
+      <div class=" formdesign"id="email">
+       Email  <input type = "text" name = "fname"> <span class = "formerror"><b>*this is a error</b></span>
+       
+       </div>
+       <br>
+       <div class="formdesign" id = "contact">
+        Contact-number:  <input type = "text" name = "fname"> <span class = "formerror"><b>*this is a error</b></span>
+</div>
+<div class="formdesign" id = "pass">
+      password <input type = "text" name = "fname"> <span class = "formerror"><b>*this is a error</b></span>
+</div>
+<button id = "btn">submit</button>
+</form>
+</body>
+<script>
+    function seterror(id,error){
+        element= document.getElementById(id);
+        element.getElementClassname("formerror")[0].innerHTML=error;
+    }
+    function validateform(){
+        let returnval= true
+        // perform validation and if validation fails ,set the value of return val to false
+
+        let name = document.forms["myform"]["fname"].value;
+        if(name.length<5){
+            seterror("name","length of name is to short");
+        console.log(name);
+        }
+        return returnval = false;
+
+    
+}
+</script>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 50px 10px;   /* comma हटाउनु पर्छ */
+        }
+        .formdesign{
+            font-size: 16px;
+            margin: 14px;
+        }
+        .formerror{
+            color: red;
+        }
+        #btn{
+            border-radius: 40px;
+            height: 30px;
+            margin: 30px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>html form</p>
+
+  
+    <form action="/myaction.php" name="myform" onsubmit="return validateform()" method="post">
+
+        <div class="formdesign" id="name">
+            Name:  
+            <input type="text" name="fname">
+            <span class="formerror"></span>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email:
+            <input type="text" name="email">
+            <span class="formerror"></span>
+        </div>
+
+        <div class="formdesign" id="contact">
+            Contact-number:
+            <input type="text" name="contact">
+            <span class="formerror"></span>
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password:
+            <input type="password" name="pass">
+            <span class="formerror"></span>
+        </div>
+
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+<script>
+
+    function seterror(id, error){
+        let element = document.getElementById(id);
+        element.getElementsByClassName("formerror")[0].innerHTML = error;
+    }
+
+    function validateform(){
+        let returnval = true;
+
+        // Name Validation
+        let name = document.forms["myform"]["fname"].value;
+        if(name.length < 5){
+            seterror("name", "Name is too short");
+            returnval = false;
+        }
+
+        return returnval;  // form submit रोक्न false
+    }
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
+</script>
+
+</body>
+</html>
